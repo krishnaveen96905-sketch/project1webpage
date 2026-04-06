@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResQ AI | Life-Saving Emergency Intelligence</title>
+  <meta name="description" content="ResQ AI automatically detects serious crashes and dispatches help instantly with zero user interaction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="introOverlay" class="intro-overlay" aria-hidden="false">
+    <div class="intro-pulse" aria-hidden="true"></div>
+    <div class="intro-pulse pulse-2" aria-hidden="true"></div>
+    <div class="intro-content">
+      <p class="intro-label">ResQ AI</p>
+      <h1 id="introText">When seconds matter, technology should act.</h1>
+    </div>
+  </div>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-red"></span>
+    <span class="orb orb-cyan"></span>
+    <span class="orb orb-green"></span>
+    <span class="scanline"></span>
+  </div>
+
+  <header class="header glass">
+    <a href="#home" class="brand">
+      <span class="brand-dot"></span>
+      <span>ResQ AI</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#vehicle">Connect</a>
+      <a href="#impact">Impact</a>
+      <a href="#download">Download</a>
+      <a href="#team">Team</a>
+    </nav>
+    <button class="btn btn-auth" id="openAuth">Sign In</button>
+  </header>
+
+  <main>
+    <section class="section hero" id="home">
+      <div class="radar" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Emergency AI Platform</p>
+        <h1>Every Second Matters. We Save Lives.</h1>
+        <p class="lead">AI-powered automatic accident detection that triggers emergency response instantly without any user interaction.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary pulse-alert">Download App</a>
+          <a href="#vehicle" class="btn btn-secondary">Connect Vehicle</a>
+        </div>
+        <div class="hero-chips">
+          <span>Zero-Click Response</span>
+          <span>Real-Time Alerts</span>
+          <span>Emergency Ready</span>
+        </div>
+      </div>
+      <aside class="hero-panel glass reveal" data-delay="120">
+        <h3>Emergency Signal Status</h3>
+        <ul>
+          <li><span class="status live"></span> Impact Signature Detected</li>
+          <li><span class="status"></span> GPS Coordinates Locked</li>
+          <li><span class="status"></span> Contact + Ambulance Alert Sent</li>
+          <li><span class="status ok"></span> Rescue ETA: 03:20</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Problem</p>
+        <h2>The golden hour is often lost before help arrives.</h2>
+      </div>
+      <div class="problem-grid">
+        <article class="scenario glass reveal">
+          <h3>Night Accident Scenario</h3>
+          <p>A rider crashes on an empty road at night. No one nearby. No manual SOS possible. Minutes pass in silence.</p>
+          <div class="night-road" aria-hidden="true"></div>
+        </article>
+        <article class="card reveal" data-delay="40">
+          <p class="icon">TIME</p>
+          <h3>Golden Hour Lost</h3>
+          <p>Critical response time is wasted before incident discovery.</p>
+        </article>
+        <article class="card reveal" data-delay="80">
+          <p class="icon">CARE</p>
+          <h3>Unconscious Victims</h3>
+          <p>Victims cannot call or unlock devices during severe impact trauma.</p>
+        </article>
+        <article class="card reveal" data-delay="120">
+          <p class="icon">SOS</p>
+          <h3>No Manual Trigger</h3>
+          <p>Existing emergency systems rely on user action at the worst time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="solution">
+      <div class="section-head reveal">
+        <p class="eyebrow">Solution</p>
+        <h2>Zero-Click Emergency Response</h2>
+      </div>
+      <div class="flow glass reveal">
+        <div class="flow-step"><strong>Accident</strong><span>Crash signal captured</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-step"><strong>Detection</strong><span>AI validates severity</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-step"><strong>Alert</strong><span>Contacts + EMS notified</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-step"><strong>Rescue</strong><span>Help dispatched instantly</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head reveal">
+        <p class="eyebrow">Features</p>
+        <h2>Built for high-stakes reliability</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card glass reveal"><h3>Multi-Sensor AI</h3><p>Accelerometer, gyroscope, and audio fusion for precise crash detection.</p></article>
+        <article class="feature-card glass reveal" data-delay="40"><h3>GPS Tracking</h3><p>Exact location relay for accurate emergency dispatching.</p></article>
+        <article class="feature-card glass reveal" data-delay="80"><h3>SMS Fallback</h3><p>Fallback alerts if mobile data is unavailable.</p></article>
+        <article class="feature-card glass reveal" data-delay="120"><h3>Real-Time Alerts</h3><p>Immediate notification pipeline to contacts and responders.</p></article>
+        <article class="feature-card glass reveal" data-delay="160"><h3>Vehicle Integration</h3><p>Connected Bike/Car telemetry improves detection confidence.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-head reveal">
+        <p class="eyebrow">How It Works</p>
+        <h2>From crash event to active rescue in seconds</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="step">1</span><h3>Continuous Monitoring</h3><p>Sensors listen silently in the background.</p></article>
+        <article class="timeline-item reveal" data-delay="60"><span class="step">2</span><h3>AI Risk Classification</h3><p>Severity model confirms emergency-grade event.</p></article>
+        <article class="timeline-item reveal" data-delay="120"><span class="step">3</span><h3>Automatic Alert</h3><p>Location and context sent to emergency contacts.</p></article>
+        <article class="timeline-item reveal" data-delay="180"><span class="step">4</span><h3>Rescue Coordination</h3><p>Response teams act with precise incident intelligence.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="vehicle">
+      <div class="section-head reveal">
+        <p class="eyebrow">Vehicle Connect</p>
+        <h2>Connect Your Vehicle</h2>
+      </div>
+      <div class="vehicle-wrap">
+        <article class="pairing glass reveal">
+          <h3>Smart Pairing Flow</h3>
+          <div class="pairing-flow" id="pairingFlow">
+            <div class="node active">Phone</div>
+            <div class="connector"></div>
+            <div class="node">Vehicle</div>
+            <div class="connector"></div>
+            <div class="node success">Connected</div>
+          </div>
+          <div class="mode-toggle" role="group" aria-label="Vehicle mode">
+            <button class="mode-btn active" data-mode="Bike">Bike</button>
+            <button class="mode-btn" data-mode="Car">Car</button>
+          </div>
+          <ul>
+            <li>Real-time vehicle data sync</li>
+            <li>Better crash detection accuracy</li>
+            <li>Smart mode switching by vehicle type</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Connect Now</a>
+        </article>
+        <article class="vehicle-dash glass reveal" data-delay="80">
+          <h3>Connected Dashboard Preview</h3>
+          <p id="dashMode">Current Mode: Bike</p>
+          <div class="dash-bars">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="dash-pill">Telemetry Live</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="impact">
+      <div class="section-head reveal">
+        <p class="eyebrow">Impact</p>
+        <h2>Turning smartphones into life-saving devices.</h2>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card glass reveal">
+          <p>ResQ AI reduces silence after a crash and converts critical minutes into immediate action.</p>
+        </article>
+        <div class="stats">
+          <article class="stat glass reveal"><p class="value" data-counter="70">0</p><p>Faster Response Trigger</p></article>
+          <article class="stat glass reveal" data-delay="60"><p class="value" data-counter="3">0</p><p>Minutes Avg Alert Time</p></article>
+          <article class="stat glass reveal" data-delay="120"><p class="value" data-counter="99">0</p><p>Detection Reliability Goal</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="section-head reveal">
+        <p class="eyebrow">Download</p>
+        <h2>Install ResQ AI and stay protected everywhere.</h2>
+      </div>
+      <div class="download-grid">
+        <article class="download-card glass reveal">
+          <h3>Android App</h3>
+          <p>Fast setup with emergency contact onboarding in minutes.</p>
+          <a href="#" class="btn btn-primary pulse-alert">Download App</a>
+        </article>
+        <article class="mockup glass reveal" data-delay="60">
+          <div class="mock-notch"></div>
+          <div class="mock-line"></div>
+          <div class="mock-line strong"></div>
+          <div class="mock-line"></div>
+          <div class="mock-map">Live GPS Tracking</div>
+        </article>
+        <article class="qr glass reveal" data-delay="120">
+          <div class="qr-box" aria-hidden="true"></div>
+          <p>Scan To Install</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="future">
+      <div class="section-head reveal">
+        <p class="eyebrow">Future Scope</p>
+        <h2>Expanding emergency intelligence beyond phones</h2>
+      </div>
+      <div class="future-grid">
+        <article class="card glass reveal"><h3>Smartwatch Integration</h3><p>Fall detection and wearable emergency triggers.</p></article>
+        <article class="card glass reveal" data-delay="60"><h3>AI Improvements</h3><p>Adaptive models with lower false positives and faster decisions.</p></article>
+        <article class="card glass reveal" data-delay="120"><h3>Smart City Integration</h3><p>Connected response grids for urban incident routing.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="section-head reveal">
+        <p class="eyebrow">Team</p>
+        <h2>Team Coiders</h2>
+      </div>
+      <div class="team-grid">
+        <article class="team-card glass reveal"><h3>Product and Vision</h3><p>Designing life-saving experiences for high-stress scenarios.</p></article>
+        <article class="team-card glass reveal" data-delay="60"><h3>AI and Data</h3><p>Building robust models for real-world accident detection.</p></article>
+        <article class="team-card glass reveal" data-delay="120"><h3>Mobile and Platform</h3><p>Delivering reliable emergency infrastructure at scale.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>ResQ AI</h3>
+      <p>Serious technology for life-saving response.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:teamcoidersimpact@gmail.com">teamcoidersimpact@gmail.com</a>
+      <a href="tel:+91 81269 28432">+91 81269 28432</a>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <a href="#">teamcoidersimpact</a>
+      <a href="#">X / Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <div class="auth-modal" id="authModal" aria-hidden="true">
+    <div class="auth-panel glass" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="close-auth" id="closeAuth" aria-label="Close">X</button>
+      <h3 id="authTitle">Sign In to ResQ AI</h3>
+      <form id="authForm">
+        <label>Email</label>
+        <input type="email" required placeholder="you@example.com" />
+        <label>Password</label>
+        <input type="password" required placeholder="Enter your password" />
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+      <button class="btn btn-google" id="googleAuth">Continue with Google</button>
+    </div>
+  </div>
+
+  <section class="dashboard" id="dashboard" aria-live="polite">
+    <div class="dashboard-card glass">
+      <h3>Welcome Back</h3>
+      <p>User dashboard preview enabled. Emergency monitoring status is active.</p>
+      <div class="dashboard-grid">
+        <div><strong>Monitoring:</strong> Active</div>
+        <div><strong>Vehicle:</strong> Connected</div>
+        <div><strong>Last Sync:</strong> Just Now</div>
+        <div><strong>Status:</strong> Protected</div>
+      </div>
+    </div>
+  </section>
+  <!-- INTRO OVERLAY -->
+<div id="introOverlay">
+  <div class="intro-content">
+    <h1 id="introText"></h1>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
